@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log in — ASAS Architecture</title>
+<meta name="description" content="Log in to see the ASAS Architecture website.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ASAS Architecture">
+<meta property="og:title" content="ASAS Architecture">
+<meta property="og:description" content="ASAS Architecture designs from first principles, between Miami and Jeddah.">
+<meta property="og:url" content="https://asas-lac.vercel.app/login.html">
+<meta property="og:image" content="https://asas-lac.vercel.app/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ASAS Architecture wordmark">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Sans+Arabic:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login">
+<main class="login-box">
+  <h1 class="login-mark" aria-label="ASAS Architecture"><b aria-hidden="true">ASAS</b><small aria-hidden="true">ARCHITECTURE</small></h1>
+  <p class="login-found">Foundation · <span class="ar" lang="ar">أساس</span></p>
+
+  <form id="auth-form" class="login-form" novalidate>
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+    </div>
+    <div class="field">
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" minlength="6" required>
+    </div>
+    <button id="submit" class="btn" type="submit">Log in</button>
+    <p id="msg" class="login-msg" role="status" aria-live="polite"></p>
+  </form>
+
+  <p class="login-switch"><span id="switch-ask">New here?</span> <button id="switch-btn" type="button">Create an account</button></p>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0/dist/umd/supabase.js"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

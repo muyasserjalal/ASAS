@@ -75,6 +75,13 @@ All text comes from Jalal_Muyasser_Manual_Practice.pdf (ARC 452) and the design 
 - After log-in, go to index.html.
 - Log out on every page.
 - All links are relative.
+- Supabase project URL: https://kumcrrcbjqiaohgafxow.supabase.co. The publishable key (sb_publishable_...) lives in js/supabase-config.js. It is safe to be public. A secret key (sb_secret_...) is never put in any file.
+- "Confirm email" is switched off in Supabase, so a new account is logged in straight away.
+- Messages on the log-in page, in plain words:
+  - Wrong email or password: "That email and password do not match. Try again, or create an account."
+  - Email already has an account: "An account with this email already exists. Log in instead."
+  - Password too short: "Use a password of at least 6 characters."
+  - Service unreachable: "The log-in service could not be reached. Check your connection and try again."
 
 ## Content rule
 Never invent facts, dimensions, dates or names I have not given you. Ask me instead.
