@@ -1,0 +1,104 @@
+/* ASAS Architecture — styles. Follows DESIGN.md. */
+:root{--ink:#111111;--paper:#FFFFFF;--graphite:#5E5E5E;--stone:#F2F2F2;--line:#D6D6D6;--ph:#CFCFCF;--m:48px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Archivo',system-ui,sans-serif;font-weight:300;font-size:17px;line-height:1.7}
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--m)}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px}
+a{color:inherit;text-decoration:none;background-image:linear-gradient(currentColor,currentColor);background-size:0 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .25s}
+a:hover,a[aria-current=page]{background-size:100% 1px}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+h1,h2,h3{font-weight:700;font-stretch:125%;margin:0}
+p{margin:0}
+p+p{margin-top:1em}
+.ar{font-family:'IBM Plex Sans Arabic',sans-serif;font-weight:300}
+.muted{color:var(--graphite)}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:var(--m);top:12px;background:var(--paper);padding:8px 12px;z-index:10}
+
+/* top bar */
+.bar{border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;gap:24px;min-height:76px}
+.mark{display:inline-flex;flex-direction:column;line-height:1;background:none}
+.mark b{font-weight:700;font-stretch:125%;font-size:18px;letter-spacing:.18em}
+.mark small{font-weight:400;font-size:9px;letter-spacing:.35em;color:var(--graphite);margin-top:5px}
+nav{display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-left:auto}
+nav a{font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:4px 0}
+.btn-out{font:500 12px/1 'Archivo',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);background:transparent;border:1px solid var(--ink);padding:11px 16px;cursor:pointer;transition:background .2s,color .2s}
+.btn-out:hover{background:var(--ink);color:var(--paper)}
+
+/* two-zone sections: label column + content */
+.sec{margin-top:120px}
+.sec>.label{grid-column:1/4;font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--graphite);padding-top:8px}
+.sec>.body{grid-column:4/13}
+.sec>.text{grid-column:4/11}
+.first{padding-top:96px;margin-top:0}
+
+/* home */
+.lockup{grid-column:1/4;display:flex;flex-direction:column;line-height:1}
+.lockup b{font-weight:700;font-stretch:125%;font-size:40px;letter-spacing:.18em}
+.lockup small{font-weight:400;font-size:10px;letter-spacing:.35em;color:var(--graphite);margin-top:8px}
+.lockup .ar-line{margin-top:20px;font-size:13px;color:var(--graphite);line-height:1.5}
+.statement h1{font-weight:600;font-size:clamp(28px,3.9vw,52px);line-height:1.2;letter-spacing:.005em}
+.statement p{margin-top:32px;color:var(--graphite)}
+.index a.item{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,16em);gap:24px;align-items:baseline;border-top:1px solid var(--ink);padding:22px 0 26px;background:none}
+.index a.item:last-child{border-bottom:1px solid var(--ink)}
+.index .name{font-weight:700;font-stretch:125%;font-size:clamp(28px,4.4vw,60px);line-height:1;letter-spacing:.02em}
+.index a.item:hover .name{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:8px}
+.index .d{font-size:15px;line-height:1.5;color:var(--graphite)}
+
+/* inner pages */
+.page-h1{font-size:clamp(30px,3.4vw,44px);line-height:1.15;letter-spacing:.04em}
+.lead{font-weight:600;font-stretch:125%;font-size:clamp(22px,2.4vw,30px);line-height:1.3}
+.big-ar{font-size:44px;line-height:1.2;color:var(--ink);display:block;margin-top:16px;letter-spacing:0;text-transform:none}
+blockquote{margin:0;font-weight:300;font-size:clamp(22px,2.4vw,30px);line-height:1.45}
+.rows .row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;border-top:1px solid var(--line);padding:28px 0}
+.rows .row:last-child{border-bottom:1px solid var(--line)}
+.rows h2,.rows h3{font-weight:600;font-size:22px;line-height:1.3}
+.rows .src{font-size:13px;color:var(--graphite);margin-top:8px}
+.steps .row{grid-template-columns:4em minmax(0,1fr) minmax(0,1.3fr)}
+.steps .n{font-weight:700;font-stretch:125%;font-size:22px;line-height:1.3}
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 24px}
+.pair h3{font-weight:600;font-size:20px;line-height:1.3;margin-bottom:10px}
+.city h2{font-size:clamp(32px,4vw,56px);line-height:1;letter-spacing:.02em}
+.city p{margin-top:14px;min-height:3.4em}
+.city .ph{margin-top:28px;aspect-ratio:4/5}
+.contact{font-weight:400;font-stretch:112%;font-size:clamp(20px,2.2vw,28px);line-height:1.4}
+.person{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,5fr);gap:40px;align-items:end}
+.person .ph{aspect-ratio:4/5}
+.person h2{font-size:28px;line-height:1.2}
+.person .role{margin-top:6px;color:var(--graphite)}
+.person p.bio{margin-top:20px}
+
+/* images */
+figure{margin:0}
+.ph{background:var(--ph);display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;color:var(--ink);font-size:14px;font-weight:400;line-height:1.4}
+.wide{grid-column:4/10}
+.wide .ph{aspect-ratio:3/2}
+img{max-width:100%;display:block;filter:grayscale(1)}
+figcaption{font-size:13px;color:var(--graphite);margin-top:12px}
+
+/* footer */
+footer{margin-top:160px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;min-height:96px}
+footer .where{font-size:13px;color:var(--graphite)}
+
+/* movement */
+@media (prefers-reduced-motion:no-preference){.js .reveal{opacity:0;transform:translateY(12px);transition:opacity .7s ease-out,transform .7s ease-out}.js .reveal.in{opacity:1;transform:none}}
+
+/* phone */
+@media (max-width:760px){
+  :root{--m:20px}
+  .bar .wrap{flex-wrap:wrap;padding-top:16px;padding-bottom:12px;gap:14px 0}
+  .mark{order:1}.bar .btn-out{order:2;margin-left:auto;padding:9px 12px}
+  nav{order:3;width:100%;margin-left:0;gap:6px 20px}nav a{letter-spacing:.16em}
+  .sec{margin-top:72px}.first{padding-top:56px}
+  .sec>.label,.sec>.body,.sec>.text,.lockup,.wide{grid-column:1/-1}
+  .sec>.label{padding:0 0 16px}
+  .lockup{margin-bottom:40px}
+  .index a.item{grid-template-columns:1fr;gap:8px}
+  .rows .row,.steps .row{grid-template-columns:1fr;gap:8px}
+  .pair{grid-template-columns:1fr;gap:40px}
+  .person{grid-template-columns:1fr}
+  footer{margin-top:96px}
+}
