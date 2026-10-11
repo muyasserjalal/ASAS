@@ -11,7 +11,7 @@ A future client should feel that this firm is serious and precise: calm, confide
 - Never feels: busy, flashy, loud.
 
 ## Chosen direction
-Scheme C, "the statement and the index", was chosen from three home page schemes. The mission statement is the headline, and the pages are a large index list. The mashrabiya pattern was tried and removed: no patterns anywhere on the site.
+Scheme C, "the statement and the index", was chosen from three home page schemes. A short line from the mission statement is the headline, and the pages are a large index list. The mashrabiya pattern was tried and removed: no patterns anywhere on the site.
 
 ## References (we borrow the system, never the identity)
 - Swiss graphic design. Borrowed: generous white space and a strict grid where everything aligns. No posters, logos or typefaces copied.
@@ -43,7 +43,7 @@ Scheme C, "the statement and the index", was chosen from three home page schemes
 - Text never runs wider than 7 of the 12 columns. On a phone everything stacks in one column.
 - Thin 1px Line rules separate sections. No boxes or cards around text.
 - Two zones on every page: a narrow label column (columns 1 to 3) holds the section name in small uppercase Graphite, and the content sits in columns 4 to 12. On a phone the label sits above the content.
-- Home hero: the ASAS lockup (ASAS 40px, "ARCHITECTURE", "Foundation · أساس") in the label column, and the mission statement as the headline in the content columns: Archivo 600, expanded width, 52px desktop and 28px phone, line height 1.2.
+- Home hero: the ASAS lockup (ASAS 40px, "ARCHITECTURE", "Foundation · أساس") in the label column. In the content columns, a short headline, "Architecture is only as strong as its foundation.": Archivo 600, expanded width, 68px desktop and 34px phone, line height 1.12. Under it, the full mission statement as a quiet quote: Archivo 300, 22px desktop and 19px phone, at most about 34 em wide. Then "Architecture between Miami and Jeddah." in Graphite.
 - Index list (home page): each page name in Archivo 700, expanded width, up to 60px, on its own row between 1px Ink rules, with a one-line description in Graphite on the right. On hover the name is underlined.
 
 ## Images

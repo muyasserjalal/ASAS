@@ -20,7 +20,7 @@ All text comes from Jalal_Muyasser_Manual_Practice.pdf (ARC 452) and the design 
 
 ### index.html — Home
 - Purpose: in ten seconds, show that the firm is serious and precise.
-- Hero: the ASAS lockup with "Foundation · أساس", and the mission statement as the headline: "We believe architecture is only as strong as its foundation. ASAS designs from first principles — honest structure, real place, and the people who will live with the result." Under it, the line "Architecture between Miami and Jeddah."
+- Hero: the ASAS lockup with "Foundation · أساس". The headline is the short line "Architecture is only as strong as its foundation." Under it, the full mission statement in smaller text: "We believe architecture is only as strong as its foundation. ASAS designs from first principles — honest structure, real place, and the people who will live with the result." Then the line "Architecture between Miami and Jeddah."
 - Index: three large links, each with one line:
   - About: "What ASAS means, and what the practice is built on."
   - Services: "What we design, and how a project moves from first sketch to final walkthrough."
