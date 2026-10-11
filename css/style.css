@@ -114,6 +114,11 @@ body.login{min-height:100vh;min-height:100svh;display:flex;align-items:center;ju
 html.lang-pending body{visibility:hidden}
 .wm{direction:ltr;unicode-bidi:isolate}
 .lockup .wm{display:flex;flex-direction:column;line-height:1;align-self:flex-start}
+.lockup{justify-content:space-between}
+.ar-big{display:flex;flex-direction:column;margin-top:40px}
+.ar-big .ar{font-size:96px;line-height:1.1;font-weight:300;color:var(--ink)}
+.lockup .ar-big small{font-size:13px;font-weight:400;letter-spacing:.02em;color:var(--graphite);margin-top:6px}
+@media (max-width:760px){.lockup{justify-content:flex-start}.ar-big{margin-top:28px}.ar-big .ar{font-size:64px}}
 .sub{font-weight:600;font-size:20px;margin-top:48px}
 .city-h{font-weight:700;font-stretch:125%;font-size:clamp(32px,4vw,56px);line-height:1;letter-spacing:.02em}
 .person-h{font-weight:700;font-stretch:125%;font-size:28px;line-height:1.2}
