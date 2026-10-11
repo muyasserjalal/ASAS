@@ -85,6 +85,8 @@ Never invent facts, dimensions, dates or names I have not given you. Ask me inst
 - index.html sits at the top of the folder.
 - It must work on a phone.
 - It is published from GitHub to Vercel.
+- Live address: https://asas-lac.vercel.app (GitHub repository: muyasserjalal/ASAS).
+- The share image uses the full live address: https://asas-lac.vercel.app/share.png
 
 ## Images
 - My files go in a folder called images.
