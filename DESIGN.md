@@ -22,7 +22,7 @@ Scheme C, "the statement and the index", was chosen from three home page schemes
 - Paper #FFFFFF: page background, text on Ink buttons.
 - Graphite #5E5E5E: secondary text (labels, captions, footer, form hints). Passes contrast on Paper and Stone.
 - Stone #F2F2F2: alternating section backgrounds, form field backgrounds.
-- Line #D6D6D6: hairline rules, form field borders.
+- Line #D6D6D6: hairline rules, form field borders, and the large decorative أساس on the Home and About pages. That word is decoration only (hidden from screen readers), because أساس also appears in the readable text.
 - Placeholder #CFCFCF: grey image placeholder boxes, with their label in Ink.
 - Error and success messages use Ink, never red or green.
 
@@ -51,7 +51,7 @@ Scheme C, "the statement and the index", was chosen from three home page schemes
 - Text never runs wider than 7 of the 12 columns. On a phone everything stacks in one column.
 - Thin 1px Line rules separate sections. No boxes or cards around text.
 - Two zones on every page: a narrow label column (columns 1 to 3) holds the section name in small uppercase Graphite, and the content sits in columns 4 to 12. On a phone the label sits above the content.
-- Home hero: the ASAS lockup (ASAS 40px, "ARCHITECTURE") at the top of the label column, and a large أساس at the bottom of the label column, next to the headline: IBM Plex Sans Arabic 300, 96px desktop and 64px phone, Ink, with "Foundation" under it in Graphite, 13px. It makes the Jeddah side felt in the first ten seconds. In the content columns, a short headline, "Architecture is only as strong as its foundation.": Archivo 600, expanded width, 68px desktop and 34px phone, line height 1.12. Under it, the full mission statement as a quiet quote: Archivo 300, 22px desktop and 19px phone, at most about 34 em wide. Then "Architecture between Miami and Jeddah." in Graphite.
+- Home hero: the ASAS lockup (ASAS 40px, "ARCHITECTURE") at the top of the label column, and a large أساس at the bottom of the label column, next to the headline: IBM Plex Sans Arabic 300, 96px desktop and 64px phone, light gray (Line #D6D6D6), with "Foundation" under it in Graphite, 13px. It makes the Jeddah side felt in the first ten seconds. In the content columns, a short headline, "Architecture is only as strong as its foundation.": Archivo 600, expanded width, 68px desktop and 34px phone, line height 1.12. Under it, the full mission statement as a quiet quote: Archivo 300, 22px desktop and 19px phone, at most about 34 em wide. Then "Architecture between Miami and Jeddah." in Graphite.
 - Index list (home page): each page name in Archivo 700, expanded width, up to 60px, on its own row between 1px Ink rules, with a one-line description in Graphite on the right. On hover the name is underlined.
 
 ## Images

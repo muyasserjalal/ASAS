@@ -116,7 +116,8 @@ html.lang-pending body{visibility:hidden}
 .lockup .wm{display:flex;flex-direction:column;line-height:1;align-self:flex-start}
 .lockup{justify-content:space-between}
 .ar-big{display:flex;flex-direction:column;margin-top:40px}
-.ar-big .ar{font-size:96px;line-height:1.1;font-weight:300;color:var(--ink)}
+.ar-big .ar{font-size:96px;line-height:1.1;font-weight:300;color:var(--line)}
+.big-ar{color:var(--line)}
 .lockup .ar-big small{font-size:13px;font-weight:400;letter-spacing:.02em;color:var(--graphite);margin-top:6px}
 @media (max-width:760px){.lockup{justify-content:flex-start}.ar-big{margin-top:28px}.ar-big .ar{font-size:64px}}
 .sub{font-weight:600;font-size:20px;margin-top:48px}
