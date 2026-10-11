@@ -67,6 +67,12 @@ All text comes from Jalal_Muyasser_Manual_Practice.pdf (ARC 452) and the design 
 - Contact: "305.555.0142 · studio@asas-architecture.com", shown as plain text, not as links, because the firm is fictional.
 - Principal: "Muyasser Jalal, Founding Principal. Educated at the University of Miami School of Architecture, trained across studios in the U.S. and Saudi Arabia." Image: [ADD: portrait of Muyasser Jalal, black and white].
 
+## Languages
+- The whole site, including login.html, is in English and Arabic, with a language button on every page. English is the default.
+- The Arabic says the same thing as the English. It adds no new facts.
+- All Arabic text lives in js/i18n.js. Muyasser checks every Arabic line before it is committed.
+- The choice is saved in the visitor's browser only. Nothing is stored about visitors.
+
 ## The log-in gate
 - Visitors can sign up with email and password and log in, using Supabase.
 - The log-in page is login.html and is never gated.

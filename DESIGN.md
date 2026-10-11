@@ -34,7 +34,15 @@ Scheme C, "the statement and the index", was chosen from three home page schemes
 - H2: Archivo 600, expanded width, 26px desktop and 21px phone, line height 1.25.
 - Body: Archivo 300, normal width, 17px, line height 1.7, at most about 62 characters per line.
 - Labels, menu and buttons: Archivo 500, 12 to 13px, uppercase, letter spacing 0.2em.
-- Arabic text (only the word أساس): IBM Plex Sans Arabic 300.
+- Arabic text: IBM Plex Sans Arabic, 300 for body, 600 and 700 for headings. No letter spacing and no uppercase in Arabic.
+
+## Languages (English and Arabic)
+- Every page, including the log-in page, comes in English and Arabic. English is the default.
+- A language button sits in the top bar, next to LOG OUT, and in the top corner of the log-in page. In English it reads "العربية"; in Arabic it reads "ENGLISH". It is a plain text button, no flag, no icon.
+- Arabic mode reads right to left: the whole grid mirrors, so the label column moves to the right side and the menu reverses.
+- In Arabic mode all text uses IBM Plex Sans Arabic, body line height 1.85, headings line height 1.35. Same sizes, same black, white and gray.
+- The ASAS wordmark, street addresses, the phone number and the email stay in Latin letters, left to right, in both languages.
+- The visitor's choice is remembered on their device.
 
 ## Layout and grid
 - 12-column grid, max width 1240px, centred. Gutter 24px. Side margins 48px desktop, 20px phone.
@@ -85,7 +93,7 @@ Scheme C, "the statement and the index", was chosen from three home page schemes
 - Calm, confident and plain. Short sentences.
 - The firm speaks as "we".
 - No exclamation marks, no superlatives (best, world-class), no buzzwords, no sales language.
-- English, with the Arabic word أساس shown where the name is explained.
+- English and Arabic. The Arabic is Modern Standard Arabic: calm, formal and plain, in the same "we" voice. Arabic quotes use « ».
 
 ## Five "never" rules
 1. Never use any colour outside black, white and the grays in this file.

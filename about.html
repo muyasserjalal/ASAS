@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About — ASAS Architecture</title>
+<title data-i18n="title.about">About — ASAS Architecture</title>
 <meta name="description" content="What ASAS means, and what the practice is built on.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ASAS Architecture">
@@ -18,67 +18,71 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Sans+Arabic:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<script src="js/i18n.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0/dist/umd/supabase.js"></script>
 <script src="js/supabase-config.js"></script>
 <script src="js/auth.js"></script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 <header class="bar"><div class="wrap">
-  <a class="mark" href="index.html" aria-label="ASAS Architecture, home"><b>ASAS</b><small>ARCHITECTURE</small></a>
+  <a class="mark wm" dir="ltr" href="index.html" aria-label="ASAS Architecture, home"><b>ASAS</b><small>ARCHITECTURE</small></a>
   <nav aria-label="Main">
-    <a href="index.html">Home</a>
-    <a href="about.html" aria-current="page">About</a>
-    <a href="services.html">Services</a>
-    <a href="studio.html">Studio</a>
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="about.html" aria-current="page" data-i18n="nav.about">About</a>
+    <a href="services.html" data-i18n="nav.services">Services</a>
+    <a href="studio.html" data-i18n="nav.studio">Studio</a>
   </nav>
-  <button class="btn-out" type="button" data-logout>Log out</button>
+  <div class="bar-actions">
+    <button class="lang-btn" type="button" data-lang-toggle lang="ar">العربية</button>
+    <button class="btn-out" type="button" data-logout data-i18n="logout">Log out</button>
+  </div>
 </div></header>
 <main id="main">
 
 <section class="wrap grid sec first" aria-labelledby="t">
-  <p class="label">The name<span class="big-ar ar" lang="ar">أساس</span></p>
+  <p class="label"><span data-i18n="lbl.name">The name</span><span class="big-ar ar" lang="ar">أساس</span></p>
   <div class="text">
-    <h1 class="page-h1" id="t">ASAS means foundation.</h1>
-    <p style="margin-top:32px">ASAS — <span class="ar" lang="ar">أساس</span>, the Arabic word for foundation — is the starting point of every building and the starting point of this practice. A foundation is unseen once construction is complete, but it is the element every later decision depends on. That is the role ASAS plays for its clients: the quiet, structural basis for work that outlasts trend and ownership.</p>
-    <p>The name is also personal: a way of carrying an Arabic word, and a discipline of starting from first principles, into a practice built between Miami and Jeddah.</p>
+    <h1 class="page-h1" id="t" data-i18n="about.h1">ASAS means foundation.</h1>
+    <p style="margin-top:32px" data-i18n="about.p1">ASAS — <span class="ar" lang="ar">أساس</span>, the Arabic word for foundation — is the starting point of every building and the starting point of this practice. A foundation is unseen once construction is complete, but it is the element every later decision depends on. That is the role ASAS plays for its clients: the quiet, structural basis for work that outlasts trend and ownership.</p>
+    <p data-i18n="about.p2">The name is also personal: a way of carrying an Arabic word, and a discipline of starting from first principles, into a practice built between Miami and Jeddah.</p>
   </div>
 </section>
 
 <section class="wrap grid sec reveal" aria-labelledby="l-m">
-  <h2 class="label" id="l-m">Mission</h2>
-  <blockquote class="body">“We believe architecture is only as strong as its foundation. ASAS designs from first principles — honest structure, real place, and the people who will live with the result.”</blockquote>
+  <h2 class="label" id="l-m" data-i18n="lbl.mission">Mission</h2>
+  <blockquote class="body" data-i18n="mission">“We believe architecture is only as strong as its foundation. ASAS designs from first principles — honest structure, real place, and the people who will live with the result.”</blockquote>
 </section>
 
 <section class="wrap grid sec reveal" aria-labelledby="l-b">
-  <h2 class="label" id="l-b">Built on</h2>
+  <h2 class="label" id="l-b" data-i18n="lbl.built">Built on</h2>
   <div class="body rows">
-    <div class="row"><h3>Ask who a project serves before asking what it looks like.</h3><p class="src">Precedent: MASS Design Group</p></div>
-    <div class="row"><h3>Know exactly who you are building for.</h3><p class="src">Precedent: IKEA</p></div>
-    <div class="row"><h3>Ground ambition in a real place. For ASAS, that is the Miami–Jeddah axis.</h3><p class="src">Precedent: NEOM</p></div>
+    <div class="row"><h3 data-i18n="b1">Ask who a project serves before asking what it looks like.</h3><p class="src" data-i18n="b1.src">Precedent: MASS Design Group</p></div>
+    <div class="row"><h3 data-i18n="b2">Know exactly who you are building for.</h3><p class="src" data-i18n="b2.src">Precedent: IKEA</p></div>
+    <div class="row"><h3 data-i18n="b3">Ground ambition in a real place. For ASAS, that is the Miami–Jeddah axis.</h3><p class="src" data-i18n="b3.src">Precedent: NEOM</p></div>
   </div>
 </section>
 
 <section class="wrap grid sec reveal" aria-labelledby="l-p">
-  <h2 class="label" id="l-p">The practice</h2>
+  <h2 class="label" id="l-p" data-i18n="lbl.practice">The practice</h2>
   <div class="text">
-    <p class="lead">ASAS is an experience-based practice.</p>
-    <p style="margin-top:20px">It runs on the principal's design judgment and reputation, not on volume or a narrow specialty. It stays deliberately small, and brings on associates only as reputation and referrals justify it.</p>
-    <h3 style="font-weight:600;font-size:20px;margin-top:48px">Mentorship</h3>
-    <p style="margin-top:10px">Every future team member gets a structured path to licensure: AXP hour tracking, exam fee reimbursement, and study time built into the work week.</p>
+    <p class="lead" data-i18n="practice.lead">ASAS is an experience-based practice.</p>
+    <p style="margin-top:20px" data-i18n="practice.p">It runs on the principal's design judgment and reputation, not on volume or a narrow specialty. It stays deliberately small, and brings on associates only as reputation and referrals justify it.</p>
+    <h3 class="sub" data-i18n="mentor.h">Mentorship</h3>
+    <p style="margin-top:10px" data-i18n="mentor.p">Every future team member gets a structured path to licensure: AXP hour tracking, exam fee reimbursement, and study time built into the work week.</p>
   </div>
 </section>
 
 <section class="wrap grid sec reveal" aria-labelledby="l-d">
-  <h2 class="label" id="l-d">Detail</h2>
+  <h2 class="label" id="l-d" data-i18n="lbl.detail">Detail</h2>
   <figure class="wide"><div class="ph" role="img" aria-label="Placeholder for an image of a foundation or structural detail, black and white">[ADD: image of a foundation or structural detail, black and white]</div></figure>
 </section>
 </main>
 <footer><div class="wrap">
-  <span class="mark" aria-hidden="true"><b>ASAS</b><small>ARCHITECTURE</small></span>
-  <span class="where">Miami · Jeddah</span>
+  <span class="mark wm" dir="ltr" aria-hidden="true"><b>ASAS</b><small>ARCHITECTURE</small></span>
+  <span class="where" data-i18n="footer.where">Miami · Jeddah</span>
 </div></footer>
 <script src="js/main.js"></script>
 </body>

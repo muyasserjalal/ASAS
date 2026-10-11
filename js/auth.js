@@ -3,7 +3,8 @@
   var root = document.documentElement;
   root.classList.add('gate'); // hides the page until the session is checked
 
-  function toLogin() { window.location.replace('login.html'); }
+  var leaving = false;
+  function toLogin() { if (leaving) return; leaving = true; window.location.replace('login.html'); }
 
   // Fast check: no saved session at all means go straight to log-in.
   var ref = 'kumcrrcbjqiaohgafxow';
@@ -32,7 +33,7 @@
     var btn = e.target.closest ? e.target.closest('[data-logout]') : null;
     if (!btn) return;
     btn.disabled = true;
-    btn.textContent = 'Logging out';
+    btn.textContent = window.ASAS_T ? window.ASAS_T('logout.busy') : 'Logging out';
     sb.auth.signOut().then(toLogin, toLogin);
   });
 })();

@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Studio — ASAS Architecture</title>
+<title data-i18n="title.studio">Studio — ASAS Architecture</title>
 <meta name="description" content="ASAS works between two cities: Miami and Jeddah.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ASAS Architecture">
@@ -18,55 +18,59 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Sans+Arabic:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<script src="js/i18n.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0/dist/umd/supabase.js"></script>
 <script src="js/supabase-config.js"></script>
 <script src="js/auth.js"></script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 <header class="bar"><div class="wrap">
-  <a class="mark" href="index.html" aria-label="ASAS Architecture, home"><b>ASAS</b><small>ARCHITECTURE</small></a>
+  <a class="mark wm" dir="ltr" href="index.html" aria-label="ASAS Architecture, home"><b>ASAS</b><small>ARCHITECTURE</small></a>
   <nav aria-label="Main">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="studio.html" aria-current="page">Studio</a>
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="services.html" data-i18n="nav.services">Services</a>
+    <a href="studio.html" aria-current="page" data-i18n="nav.studio">Studio</a>
   </nav>
-  <button class="btn-out" type="button" data-logout>Log out</button>
+  <div class="bar-actions">
+    <button class="lang-btn" type="button" data-lang-toggle lang="ar">العربية</button>
+    <button class="btn-out" type="button" data-logout data-i18n="logout">Log out</button>
+  </div>
 </div></header>
 <main id="main">
 
 <section class="wrap grid sec first" aria-labelledby="t">
-  <p class="label">Studio</p>
-  <div class="body"><h1 class="page-h1" id="t">ASAS works between two cities.</h1></div>
+  <p class="label" data-i18n="nav.studio">Studio</p>
+  <div class="body"><h1 class="page-h1" id="t" data-i18n="studio.h1">ASAS works between two cities.</h1></div>
 </section>
 
 <section class="wrap grid sec reveal" aria-labelledby="l-o">
-  <h2 class="label" id="l-o">Offices</h2>
+  <h2 class="label" id="l-o" data-i18n="lbl.offices">Offices</h2>
   <div class="body pair">
-    <div class="city"><h3 class="h" style="font-weight:700;font-stretch:125%;font-size:clamp(32px,4vw,56px);line-height:1;letter-spacing:.02em">Miami</h3><p>1200 Brickell Avenue<br>Miami, FL 33131</p><div class="ph" role="img" aria-label="Placeholder for an image of Miami, black and white">[ADD: image of Miami, black and white]</div></div>
-    <div class="city"><h3 class="h" style="font-weight:700;font-stretch:125%;font-size:clamp(32px,4vw,56px);line-height:1;letter-spacing:.02em">Jeddah</h3><p>Jeddah, Saudi Arabia</p><div class="ph" role="img" aria-label="Placeholder for an image of Jeddah, black and white">[ADD: image of Jeddah, black and white]</div></div>
+    <div class="city"><h3 class="city-h" data-i18n="city.miami">Miami</h3><p dir="ltr" lang="en">1200 Brickell Avenue<br>Miami, FL 33131</p><div class="ph" role="img" aria-label="Placeholder for an image of Miami, black and white">[ADD: image of Miami, black and white]</div></div>
+    <div class="city"><h3 class="city-h" data-i18n="city.jeddah">Jeddah</h3><p data-i18n="city.jeddah.p">Jeddah, Saudi Arabia</p><div class="ph" role="img" aria-label="Placeholder for an image of Jeddah, black and white">[ADD: image of Jeddah, black and white]</div></div>
   </div>
 </section>
 
 <section class="wrap grid sec reveal" aria-labelledby="l-c">
-  <h2 class="label" id="l-c">Contact</h2>
-  <p class="body contact">305.555.0142<br>studio@asas-architecture.com</p>
+  <h2 class="label" id="l-c" data-i18n="lbl.contact">Contact</h2>
+  <p class="body contact" dir="ltr" lang="en">305.555.0142<br>studio@asas-architecture.com</p>
 </section>
 
 <section class="wrap grid sec reveal" aria-labelledby="l-pr">
-  <h2 class="label" id="l-pr">Principal</h2>
+  <h2 class="label" id="l-pr" data-i18n="lbl.principal">Principal</h2>
   <div class="body person">
     <figure><div class="ph" role="img" aria-label="Placeholder for a portrait of Muyasser Jalal, black and white">[ADD: portrait of Muyasser Jalal, black and white]</div></figure>
-    <div><h3 style="font-weight:700;font-stretch:125%;font-size:28px;line-height:1.2">Muyasser Jalal</h3><p class="role">Founding Principal</p><p class="bio">Educated at the University of Miami School of Architecture, trained across studios in the U.S. and Saudi Arabia.</p></div>
+    <div><h3 class="person-h" data-i18n="person.name">Muyasser Jalal</h3><p class="role" data-i18n="person.role">Founding Principal</p><p class="bio" data-i18n="person.bio">Educated at the University of Miami School of Architecture, trained across studios in the U.S. and Saudi Arabia.</p></div>
   </div>
 </section>
 </main>
 <footer><div class="wrap">
-  <span class="mark" aria-hidden="true"><b>ASAS</b><small>ARCHITECTURE</small></span>
-  <span class="where">Miami · Jeddah</span>
+  <span class="mark wm" dir="ltr" aria-hidden="true"><b>ASAS</b><small>ARCHITECTURE</small></span>
+  <span class="where" data-i18n="footer.where">Miami · Jeddah</span>
 </div></footer>
 <script src="js/main.js"></script>
 </body>

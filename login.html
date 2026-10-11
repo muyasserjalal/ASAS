@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Log in — ASAS Architecture</title>
+<title data-i18n="title.login">Log in — ASAS Architecture</title>
 <meta name="description" content="Log in to see the ASAS Architecture website.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ASAS Architecture">
@@ -18,22 +18,24 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Sans+Arabic:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<script src="js/i18n.js"></script>
 </head>
 <body class="login">
+<div class="login-top"><button class="lang-btn" type="button" data-lang-toggle lang="ar">العربية</button></div>
 <main class="login-box">
-  <h1 class="login-mark" aria-label="ASAS Architecture"><b aria-hidden="true">ASAS</b><small aria-hidden="true">ARCHITECTURE</small></h1>
-  <p class="login-found">Foundation · <span class="ar" lang="ar">أساس</span></p>
+  <h1 class="login-mark wm" dir="ltr" aria-label="ASAS Architecture"><b aria-hidden="true">ASAS</b><small aria-hidden="true">ARCHITECTURE</small></h1>
+  <p class="login-found" data-i18n="found">Foundation · <span class="ar" lang="ar">أساس</span></p>
 
   <form id="auth-form" class="login-form" novalidate>
     <div class="field">
-      <label for="email">Email</label>
-      <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+      <label for="email" data-i18n="f.email">Email</label>
+      <input id="email" name="email" type="email" dir="ltr" autocomplete="email" inputmode="email" required>
     </div>
     <div class="field">
-      <label for="password">Password</label>
-      <input id="password" name="password" type="password" autocomplete="current-password" minlength="6" required>
+      <label for="password" data-i18n="f.password">Password</label>
+      <input id="password" name="password" type="password" dir="ltr" autocomplete="current-password" minlength="6" required>
     </div>
     <button id="submit" class="btn" type="submit">Log in</button>
     <p id="msg" class="login-msg" role="status" aria-live="polite"></p>

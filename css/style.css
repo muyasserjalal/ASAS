@@ -13,8 +13,8 @@ p{margin:0}
 p+p{margin-top:1em}
 .ar{font-family:'IBM Plex Sans Arabic',sans-serif;font-weight:300}
 .muted{color:var(--graphite)}
-.skip{position:absolute;left:-9999px}
-.skip:focus{left:var(--m);top:12px;background:var(--paper);padding:8px 12px;z-index:10}
+.skip{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip:focus{width:auto;height:auto;clip:auto;inset-inline-start:var(--m);top:12px;background:var(--paper);padding:8px 12px;z-index:10}
 
 /* top bar */
 .bar{border-bottom:1px solid var(--line)}
@@ -22,7 +22,10 @@ p+p{margin-top:1em}
 .mark{display:inline-flex;flex-direction:column;line-height:1;background:none}
 .mark b{font-weight:700;font-stretch:125%;font-size:18px;letter-spacing:.18em}
 .mark small{font-weight:400;font-size:9px;letter-spacing:.35em;color:var(--graphite);margin-top:5px}
-nav{display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-left:auto}
+nav{display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-inline-start:auto}
+.bar-actions{display:flex;align-items:center;gap:24px}
+.lang-btn{background:none;border:0;padding:4px 0;font:400 15px/1 'IBM Plex Sans Arabic','Archivo',sans-serif;color:var(--ink);cursor:pointer;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px}
+.lang-btn:hover{text-decoration-thickness:2px}
 nav a{font-weight:500;font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:4px 0}
 .btn-out{font:500 12px/1 'Archivo',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);background:transparent;border:1px solid var(--ink);padding:11px 16px;cursor:pointer;transition:background .2s,color .2s}
 .btn-out:hover{background:var(--ink);color:var(--paper)}
@@ -107,6 +110,26 @@ body.login{min-height:100vh;min-height:100svh;display:flex;align-items:center;ju
 .login-switch{margin-top:28px;text-align:center;font-size:14px;color:var(--graphite)}
 .login-switch button{background:none;border:0;padding:0;font:inherit;color:var(--ink);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
 
+/* languages (DESIGN.md: Languages) */
+html.lang-pending body{visibility:hidden}
+.wm{direction:ltr;unicode-bidi:isolate}
+.lockup .wm{display:flex;flex-direction:column;line-height:1;align-self:flex-start}
+.sub{font-weight:600;font-size:20px;margin-top:48px}
+.city-h{font-weight:700;font-stretch:125%;font-size:clamp(32px,4vw,56px);line-height:1;letter-spacing:.02em}
+.person-h{font-weight:700;font-stretch:125%;font-size:28px;line-height:1.2}
+.login-top{position:absolute;top:20px;inset-inline-end:24px}
+[dir=rtl] a{background-position:100% 100%}
+:root[lang=ar] body{line-height:1.85}
+:root[lang=ar] body :not(.wm):not(.wm *):not([lang=en]){font-family:'IBM Plex Sans Arabic','Archivo',sans-serif;letter-spacing:0;text-transform:none}
+:root[lang=ar] h1,:root[lang=ar] h2,:root[lang=ar] h3,:root[lang=ar] .lead,:root[lang=ar] .index .name{line-height:1.35}
+:root[lang=ar] .statement h1{line-height:1.3}
+:root[lang=ar] .sec>.label{font-size:14px;font-weight:500}
+:root[lang=ar] nav a,:root[lang=ar] .btn-out,:root[lang=ar] .btn{font-size:14px;font-weight:500}
+:root[lang=ar] .lang-btn{font:500 12px/1 'Archivo',sans-serif;letter-spacing:.2em;text-transform:uppercase;text-decoration:none}
+:root[lang=ar] .lang-btn:hover{text-decoration:underline}
+:root[lang=ar] .field label{font-size:14px}
+[dir=rtl] p[dir=ltr]{text-align:right}
+
 /* movement */
 @media (prefers-reduced-motion:no-preference){.js .reveal{opacity:0;transform:translateY(12px);transition:opacity .7s ease-out,transform .7s ease-out}.js .reveal.in{opacity:1;transform:none}}
 
@@ -114,8 +137,8 @@ body.login{min-height:100vh;min-height:100svh;display:flex;align-items:center;ju
 @media (max-width:760px){
   :root{--m:20px}
   .bar .wrap{flex-wrap:wrap;padding-top:16px;padding-bottom:12px;gap:14px 0}
-  .mark{order:1}.bar .btn-out{order:2;margin-left:auto;padding:9px 12px}
-  nav{order:3;width:100%;margin-left:0;gap:6px 20px}nav a{letter-spacing:.16em}
+  .mark{order:1}.bar-actions{order:2;margin-inline-start:auto;gap:16px}.bar .btn-out{padding:9px 12px}
+  nav{order:3;width:100%;margin-inline-start:0;gap:6px 20px}nav a{letter-spacing:.16em}
   .sec{margin-top:72px}.first{padding-top:56px}
   .sec>.label,.sec>.body,.sec>.text,.lockup,.wide{grid-column:1/-1}
   .sec>.label{padding:0 0 16px}

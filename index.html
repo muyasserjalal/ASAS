@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ASAS Architecture</title>
+<title data-i18n="title.index">ASAS Architecture</title>
 <meta name="description" content="ASAS Architecture designs from first principles, between Miami and Jeddah.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ASAS Architecture">
@@ -18,52 +18,56 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Sans+Arabic:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<script src="js/i18n.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0/dist/umd/supabase.js"></script>
 <script src="js/supabase-config.js"></script>
 <script src="js/auth.js"></script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 <header class="bar"><div class="wrap">
-  <a class="mark" href="index.html" aria-label="ASAS Architecture, home"><b>ASAS</b><small>ARCHITECTURE</small></a>
+  <a class="mark wm" dir="ltr" href="index.html" aria-label="ASAS Architecture, home"><b>ASAS</b><small>ARCHITECTURE</small></a>
   <nav aria-label="Main">
-    <a href="index.html" aria-current="page">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="studio.html">Studio</a>
+    <a href="index.html" aria-current="page" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="services.html" data-i18n="nav.services">Services</a>
+    <a href="studio.html" data-i18n="nav.studio">Studio</a>
   </nav>
-  <button class="btn-out" type="button" data-logout>Log out</button>
+  <div class="bar-actions">
+    <button class="lang-btn" type="button" data-lang-toggle lang="ar">العربية</button>
+    <button class="btn-out" type="button" data-logout data-i18n="logout">Log out</button>
+  </div>
 </div></header>
 <main id="main">
 
 <section class="wrap grid sec first" aria-label="Introduction">
-  <div class="lockup"><b aria-hidden="true">ASAS</b><small aria-hidden="true">ARCHITECTURE</small><span class="ar-line">Foundation · <span class="ar" lang="ar">أساس</span></span></div>
+  <div class="lockup"><span class="wm" dir="ltr"><b aria-hidden="true">ASAS</b><small aria-hidden="true">ARCHITECTURE</small></span><span class="ar-line" data-i18n="found">Foundation · <span class="ar" lang="ar">أساس</span></span></div>
   <div class="body statement">
-    <h1>Architecture is only as strong as its foundation.</h1>
-    <blockquote class="mission">“We believe architecture is only as strong as its foundation. ASAS designs from first principles — honest structure, real place, and the people who will live with the result.”</blockquote>
-    <p>Architecture between Miami and Jeddah.</p>
+    <h1 data-i18n="home.h1">Architecture is only as strong as its foundation.</h1>
+    <blockquote class="mission" data-i18n="mission">“We believe architecture is only as strong as its foundation. ASAS designs from first principles — honest structure, real place, and the people who will live with the result.”</blockquote>
+    <p data-i18n="home.line">Architecture between Miami and Jeddah.</p>
   </div>
 </section>
 
 <section class="wrap grid sec reveal" aria-labelledby="l-index">
-  <h2 class="label" id="l-index">Index</h2>
+  <h2 class="label" id="l-index" data-i18n="lbl.index">Index</h2>
   <div class="body index">
-    <a class="item" href="about.html"><span class="name">About</span><span class="d">What ASAS means, and what the practice is built on.</span></a>
-    <a class="item" href="services.html"><span class="name">Services</span><span class="d">What we design, and how a project moves from first sketch to final walkthrough.</span></a>
-    <a class="item" href="studio.html"><span class="name">Studio</span><span class="d">Two cities: Miami and Jeddah.</span></a>
+    <a class="item" href="about.html"><span class="name" data-i18n="nav.about">About</span><span class="d" data-i18n="idx.about">What ASAS means, and what the practice is built on.</span></a>
+    <a class="item" href="services.html"><span class="name" data-i18n="nav.services">Services</span><span class="d" data-i18n="idx.services">What we design, and how a project moves from first sketch to final walkthrough.</span></a>
+    <a class="item" href="studio.html"><span class="name" data-i18n="nav.studio">Studio</span><span class="d" data-i18n="idx.studio">Two cities: Miami and Jeddah.</span></a>
   </div>
 </section>
 
 <section class="wrap grid sec reveal" aria-labelledby="l-detail">
-  <h2 class="label" id="l-detail">Detail</h2>
+  <h2 class="label" id="l-detail" data-i18n="lbl.detail">Detail</h2>
   <figure class="wide"><div class="ph" role="img" aria-label="Placeholder for an image of a building detail, black and white">[ADD: image of a building detail, black and white]</div></figure>
 </section>
 </main>
 <footer><div class="wrap">
-  <span class="mark" aria-hidden="true"><b>ASAS</b><small>ARCHITECTURE</small></span>
-  <span class="where">Miami · Jeddah</span>
+  <span class="mark wm" dir="ltr" aria-hidden="true"><b>ASAS</b><small>ARCHITECTURE</small></span>
+  <span class="where" data-i18n="footer.where">Miami · Jeddah</span>
 </div></footer>
 <script src="js/main.js"></script>
 </body>
